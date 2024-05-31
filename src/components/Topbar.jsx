@@ -20,7 +20,7 @@ const Topbar = () => {
                     {
                         navLinks.map((v, i) => {
                             return (
-                                <Link className='md:opacity-60' href={v.href}>{v.label}</Link>
+                                <Link key={i} className='md:opacity-60' href={v.href}>{v.label}</Link>
                             )
                         })
                     }
